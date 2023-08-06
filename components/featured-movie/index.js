@@ -10,7 +10,7 @@ const FeaturedMovie = ({ movie = {}, isCompact = true }) => {
       <h1 className=" text-7xl uppercase tracking-tight font-black max-w-[25ch]">
         {title}
       </h1>
-      <p className=" text-2xl max-w-[50ch]">{overview}</p>
+      <p className=" text-xl max-w-[60ch]">{overview}</p>
       <div className=" flex gap-3">
         <Link
           href={`/movie/${movie.id}`}
@@ -22,12 +22,13 @@ const FeaturedMovie = ({ movie = {}, isCompact = true }) => {
           <FaPlus />
         </button>
       </div>
-      <div className=" h-auto -z-20 max-h-screen object-cover">
+      <div className=" !h-auto -z-20 max-h-screen object-cover">
         <div className=" absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black -z-10"></div>
         <Image
           unoptimized
-          src={`https://image.tmdb.org/t/p/orginal${poster_path}`}
+          src={`https://image.tmdb.org/t/p/original${poster_path}`}
           alt={title}
+          className=" !h-auto -z-20 max-h-screen object-cover"
           fill
         />
       </div>

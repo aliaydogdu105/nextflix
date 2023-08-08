@@ -3,11 +3,11 @@ import Link from "next/link";
 import React from "react";
 import { FaPlus } from "react-icons/fa";
 
-const FeaturedMovie = ({ movie = {}, isCompact = true }) => {
+const FeaturedMovie = ({ movie = {} }) => {
   const { poster_path, title, overview } = movie;
   return (
     <div className=" flex flex-col gap-6 my-14">
-      <h1 className=" text-7xl uppercase tracking-tight font-black max-w-[25ch]">
+      <h1 className=" text-5xl md:text-7xl uppercase tracking-tight font-black max-w-[25ch]">
         {title}
       </h1>
       <p className=" text-xl max-w-[60ch]">{overview}</p>

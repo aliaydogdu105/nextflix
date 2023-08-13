@@ -6,7 +6,7 @@ const Categories = ({ categories }) => {
     <div className=" flex h-16 gap-6 overflow-x-auto overflow-y-hidden">
       {categories.map((category) => (
         <Link
-          className=" flex items-center justify-center bg-slate-700 bg-opacity-50 px-8 border border-solid border-gray-700 shadow-md w-full h-full rounded-md font-bold touch-auto"
+          className=" flex items-center justify-center bg-slate-700 bg-opacity-50 px-8 border border-solid border-gray-700 shadow-md w-full h-full rounded-md font-bold touch-auto hover:bg-slate-400 hover:text-slate-900"
           key={category.id}
           href={`/${category.id}`}
         >

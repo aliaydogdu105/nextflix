@@ -28,7 +28,7 @@ const FeaturedMovie = ({ movie = {} }) => {
           unoptimized
           src={`https://image.tmdb.org/t/p/original${poster_path}`}
           alt={title}
-          className=" !h-auto -z-20 max-h-screen object-cover"
+          className=" !h-auto -z-20 opacity-25 max-h-screen object-cover"
           fill
         />
       </div>

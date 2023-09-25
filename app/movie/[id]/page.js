@@ -3,14 +3,12 @@ import React from "react";
 import { notFound } from "next/navigation";
 import { getMovie } from "@/services/movie";
 
-const MoviePage = async ({ params, searchParams }) => {
-  
+const MoviePage = async ({ params }) => {
   const movieDetail = await getMovie(params.id);
   
   if (!movieDetail) {
     notFound();
   }
-
 
   return (
     <div>

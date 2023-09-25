@@ -5,6 +5,7 @@ import "../styles/global.css";
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import ScrollToTop from "@/components/scroll-to-top";
 
 const interFontFamily = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body className=" flex flex-col h-screen bg-black text-base text-white">
         <Header />
         <main className=" flex-grow px-10">{children}</main>
+        <ScrollToTop />
         <Footer />
       </body>
     </html>
